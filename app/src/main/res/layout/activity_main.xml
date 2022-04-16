@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2,3,4">
+
+    <TableRow>
+        <TextView android:id="@+id/texto" android:text="@string/textoInicio" android:layout_span="4" style="@style/TextoPrincipal"></TextView>
+    </TableRow>
+
+    <TableRow>
+        <Button android:id="@+id/buttonC" android:onClick="clear" android:text="@string/buttomClear" ></Button>
+        <Button android:id="@+id/buttonS" android:text="@string/buttomSigno"></Button>
+        <Button android:id="@+id/buttonP" android:onClick="crearTexto" android:text="@string/buttomPorcentaje"></Button>
+        <Button android:id="@+id/buttonD" android:onClick="crearTexto"  android:text="@string/buttomDivide" style="@style/ButtonText"></Button>
+    </TableRow>
+
+    <TableRow>
+        <Button android:id="@+id/button7" android:onClick="crearTexto" android:text="7"></Button>
+        <Button android:id="@+id/button8" android:onClick="crearTexto" android:text="8"></Button>
+        <Button android:id="@+id/button9" android:onClick="crearTexto" android:text="9"></Button>
+        <Button android:id="@+id/buttonMutiplica" android:onClick="crearTexto" android:text="*" style="@style/ButtonText" ></Button>
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/button4" android:onClick="crearTexto" android:text="4"></Button>
+        <Button android:id="@+id/button5" android:onClick="crearTexto" android:text="5"></Button>
+        <Button android:id="@+id/button6" android:onClick="crearTexto" android:text="6"></Button>
+        <Button android:id="@+id/buttonMinus" android:onClick="crearTexto" android:text="-" style="@style/ButtonText" ></Button>
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/button3" android:onClick="crearTexto" android:text="3"></Button>
+        <Button android:id="@+id/button2" android:onClick="crearTexto" android:text="2"></Button>
+        <Button android:id="@+id/button1" android:onClick="crearTexto" android:text="1"></Button>
+        <Button android:id="@+id/buttonPlus" android:onClick="crearTexto" android:text="+" style="@style/ButtonText"></Button>
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/button0" android:onClick="crearTexto" android:text="0" android:layout_span="2"></Button>
+        <Button android:id="@+id/buttonPoint" android:onClick="crearTexto" android:text="."></Button>
+        <Button android:id="@+id/buttonEqual" android:onClick="resultado" android:text="=" style="@style/ButtonText"></Button>
+    </TableRow>
+
+
+</TableLayout>
